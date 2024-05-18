@@ -10,10 +10,43 @@
         <form method="post" autocomplete="off">
             {% csrf_token %}
 
-            {{form4|crispy}}
+            {{form4.first_name|as_crispy_field}}
+
             <br>
-            <button type="submit" class="btn btn-success w-100 btn-block p-2">Update record</button>
+
+            {{form4.last_name|as_crispy_field}}
+
+            <br>
+
+            {{form4.email|as_crispy_field}}
+
+            <br>
+
+            {{form4.phone|as_crispy_field}}
+
+            <br>
+
+            {{form4.address|as_crispy_field}}
+
+            <br>
+
+            {{form4.city|as_crispy_field}}
+
+            <br>
+
+            {{form4.province|as_crispy_field}}
+
+            <br>
+
+            {{form4.country|as_crispy_field}}
+
+            <br>
+
+            <button type="submit" class="btn btn-info">Update record &nbsp; <i class="fa fa-plus" aria-hidden="true"></i></button>
+            <a href="{% url 'dashboard' %}" class="btn btn-primary">Return &nbsp; <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </a>
         </form>
     </div>
+    <br>
 
 {% endblock %}
