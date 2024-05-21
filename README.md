@@ -1,6 +1,6 @@
 #  CRM
 
-I developed this application using Django. I made this project for learning purposes. My main focus was on functionalities, so there might be some UI/client-side issues.
+I builded this application using Django. I made this project for learning purposes. My main focus was on functionalities, so there might be some UI/client-side issues.
 
 ## Screenshots
 
